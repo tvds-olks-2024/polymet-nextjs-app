@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export function TestimonialsSection() {
   const testimonials = [
@@ -61,7 +61,7 @@ export function TestimonialsSection() {
             <p
               className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
             >
-              Don't just take our word for it - hear from some of our satisfied
+              Dont just take our word for it - hear from some of our satisfied
               clients.
             </p>
           </div>
