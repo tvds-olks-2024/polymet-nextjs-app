@@ -1,25 +1,13 @@
 "use client"
 
-import React, { useState } from "react";
-import { Header } from "(components)/header";
-import { Footer } from "(components)/footer";
+import React from "react";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+export default function Layout({ children }) {
   return (
     <div
-      className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950"
+      className="min-h-screen bg-white dark:bg-gray-900 flex items-center justify-center"
     >
-      <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      <main className="flex-grow">
-        {children}
-      </main>
-      <Footer />
+      {children}
     </div>
   );
 }
