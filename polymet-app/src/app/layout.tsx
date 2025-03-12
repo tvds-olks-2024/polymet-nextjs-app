@@ -2,7 +2,7 @@
 
 import "./globals.css";
 
-import React, { useState } from "react";
+import React from "react";
 import Layout from "pages/layout";
 import Home from "pages/home";
 
